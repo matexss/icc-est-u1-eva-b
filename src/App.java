@@ -1,7 +1,9 @@
+import Models.Book;
+import View.ViewConsole;
 public class App {
     public static void main(String[] args) throws Exception {
-
-        Book[] books = {
+        
+        Book[] books = new Book[] {
                 new Book("Clean Code", 2008),
                 new Book("The Pragmatic Programmer", 1999),
                 new Book("Design Patterns: Elements of Reusable Object-Oriented Software", 1994),
@@ -34,5 +36,19 @@ public class App {
                 new Book("The Elements of Statistical Learning", 2001)
         };
 
+ ViewConsole viewConsole = new ViewConsole();
+viewConsole.printMessage("El arreglo es: ");
+viewConsole.printBookArray(books);
+
+
+viewConsole.printMessage("El arreglo ordenado por nombre es: ");
+
+
+
+
     }
 }
+
+
+
+
